@@ -13,7 +13,18 @@ export class TraductorComponent {
         this.http.get('assets/traductor.json').subscribe(data => {
         
             this.misdatos = data;
+            setTimeout(function(){
+                let filas = document.getElementsByClassName("fila")
+                
+                console.log(filas.length)
+                for(let i = 0;i<filas.length;i++){
+                    (filas[i] as HTMLElement).style.display = "none";
+                    
+            }
+            },1000)
             
         })
+        
+        console.log("hola")
     }
 }
