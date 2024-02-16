@@ -1,10 +1,10 @@
 <h3>Traductor</h3>
 <table>
-    <tr>
-        <td>Español</td>
-        <td>Inglés</td>
-        <td>Francés</td>
-        <td>Alemán</td>
-        <td>Italiano</td>
+    <tr *ngFor="let entrada of misdatos">
+        <td>{{entrada.es}}</td>
+        <td>{{entrada.en}}</td>
+        <td>{{entrada.fr}}</td>
+        <td>{{entrada.de}}</td>
+        <td>{{entrada.it}}</td>
     </tr>
 </table>

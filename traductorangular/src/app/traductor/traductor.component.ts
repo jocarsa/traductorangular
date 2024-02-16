@@ -11,12 +11,9 @@ export class TraductorComponent {
     misdatos: any;
     ngOnInit(){
         this.http.get('assets/traductor.json').subscribe(data => {
-        console.log(data)
-        /*
-            let misdatos = data[2].data
-            console.log(misdatos)
-            this.misdatos = misdatos;
-            */
+        
+            this.misdatos = data;
+            
         })
     }
 }
