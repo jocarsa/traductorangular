@@ -27,4 +27,8 @@ export class TraductorComponent {
         
         console.log("hola")
     }
+    enviar() {
+        const contenido = (document.getElementById('termino') as HTMLInputElement).value;
+        console.log(contenido);
+    }
 }
