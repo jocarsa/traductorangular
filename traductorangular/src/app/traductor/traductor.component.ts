@@ -24,7 +24,18 @@ export class TraductorComponent {
         console.log("hola");
     }
 
+    
     enviar() {
+    
+        
+        let filas = document.getElementsByClassName("fila");
+        console.log(filas.length);
+        for(let i = 0; i < filas.length; i++){
+            (filas[i] as HTMLElement).style.display = "none";
+        }
+           
+       
+    
         const contenido = (document.getElementById('termino') as HTMLInputElement).value;
         console.log(contenido);
         console.log("Ahora lo comparo con mis datos:");
