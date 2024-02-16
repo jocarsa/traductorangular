@@ -30,5 +30,18 @@ export class TraductorComponent {
     enviar() {
         const contenido = (document.getElementById('termino') as HTMLInputElement).value;
         console.log(contenido);
+        console.log("Ahora lo comparo con mis datos:")
+        this.http.get('assets/traductor.json').subscribe(data => {
+        console.log("ok hola")
+            let jsonData = JSON.parse(JSON.stringify(data))
+            console.log(jsonData)
+            for(let i = 0;i<jsonData.length;i++){
+                
+                if(jsonData[i]['es'] == contenido){
+                    console.log("coincidencia encontrada")
+                    console.log(jsonData[i])
+                }
+            }
+        })
     }
 }
