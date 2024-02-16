@@ -1,0 +1,2 @@
+ng new traductorangular --standalone false
+cd traductorangular
