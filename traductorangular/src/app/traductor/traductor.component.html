@@ -9,7 +9,7 @@
         <th>Alemán</th>
         <th>Italiano</th>
     </tr>
-    <tr *ngFor="let entrada of misdatos" class='fila'>
+    <tr *ngFor="let entrada of misdatos" class='fila' id="{{entrada.es}}">
         <td>{{entrada.es}}</td>
         <td>{{entrada.en}}</td>
         <td>{{entrada.fr}}</td>
