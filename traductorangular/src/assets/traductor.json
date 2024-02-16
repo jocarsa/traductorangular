@@ -1,8 +1,4 @@
 [
-{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"traductor"},
-{"type":"table","name":"traduccion___hoja_1","database":"traductor","data":
-[
 {"es":"Gente","en":"People","de":"Menschen","fr":"personnes","it":"Persone"},
 {"es":"humanidad","en":"humanity","de":"Menschheit","fr":"humanité","it":"umanità"},
 {"es":"humano","en":"human","de":"menschlich","fr":"humain","it":"umano"},
@@ -1282,5 +1278,4 @@
 {"es":"altavoz","en":"speaker","de":"Lautsprecher","fr":"conférencier","it":"altoparlante"},
 {"es":"jabón","en":"soap","de":"Seife","fr":"savon","it":"sapone"}
 ]
-}
-]
+
